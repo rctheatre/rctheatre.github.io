@@ -1,0 +1,17 @@
+{
+  "name": "rct-website",
+  "version": "1.0.0",
+  "description": "Rexburg Community Theatre website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Joshua Cluff",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
