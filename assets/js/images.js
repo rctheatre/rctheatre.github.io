@@ -3,10 +3,10 @@ $(document).ready(function() {
     var imagesSets = [
         ["images/show-images/1.jpg", "images/show-images/2.jpg", "images/show-images/3.jpg"],
         ["images/show-images/4.jpg", "images/show-images/5.jpg", "images/show-images/6.jpg"],
-        ["images/show-images/7.jpg", "images/show-images/8.png", "images/show-images/9.png"],
+        ["images/show-images/7.jpg", "images/show-images/8.jpg", "images/show-images/9.jpg"],
         ["images/show-images/10.jpg", "images/show-images/11.jpg", "images/show-images/12.jpg"],
-        ["images/show-images/13.jpg", "images/show-images/14.png", "images/show-images/19.png"],
-        ["images/show-images/20.png", "images/show-images/17.png", "images/show-images/18.png"]
+        ["images/show-images/13.jpg", "images/show-images/14.jpg", "images/show-images/19.jpg"],
+        ["images/show-images/20.jpg", "images/show-images/17.jpg", "images/show-images/18.jpg"]
     ];
 
     // Function to change the image with a fade effect
@@ -26,35 +26,18 @@ $(document).ready(function() {
         });
     }
 
-    function createCloseButton() {
-        return $('<div class="close-button">X</div>').css({
-            'position': 'absolute',
-            'top': '10px',
-            'right': '10px',
-            'padding': '5px 10px',
-            'background': 'black',
-            'color': 'white',
-            'cursor': 'pointer',
-            'border-radius': '50%',
-            'font-family': 'Arial, sans-serif',
-            'font-weight': 'bold',
-            'line-height': '1',
-            'z-index': '20000' // Above the image
-        });
-    }
-
     function enlargeImage(img) {
         img.css({
-            'width': '80%',
+            'max-height': '80vh',
+            'max-width': 'auto',
+            'height': 'auto',
+            'width': 'auto',
             'position': 'fixed',
             'top': '50%',
             'left': '50%',
             'transform': 'translate(-50%, -50%)',
-            'z-index': '9999'
-        });
-        var closeButton = createCloseButton();
-        closeButton.appendTo('body').on('click', function () {
-            shrinkImage(img);
+            'z-index': '9999',
+            'object-fit': 'contain'
         });
         $('<div class="overlay"></div>').css({
             'position': 'fixed',

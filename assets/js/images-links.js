@@ -26,22 +26,6 @@ $(document).ready(function() {
         });
     }
 
-    function createCloseButton() {
-        return $('<div class="close-button"></div>').css({
-            'position': 'fixed',
-            'top': '10vh', // Position from the top of the viewport
-            'right': '10vw', // Position from the right of the viewport
-            'padding': '5px 10px',
-            'background': 'black',
-            'color': 'white',
-            'cursor': 'pointer',
-            'border-radius': '50%',
-            'font-family': 'Arial, sans-serif',
-            'font-weight': 'bold',
-            'line-height': '1',
-            'z-index': '20001' // Above the overlay and image
-        });
-    }
 
     function enlargeImage(img) {
         img.css({
