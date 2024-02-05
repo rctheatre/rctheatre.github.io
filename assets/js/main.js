@@ -17,6 +17,12 @@
 					fadeDelay: 250
 				},
 
+				tickers: {
+					fadeIn: true,
+					fadeDelay: 250,
+					speed: 4
+				}
+
 		};
 
 	// Breakpoints.
@@ -220,4 +226,89 @@
 
 		});
 
+	// Ticker.
+	let images = ["images/header.svg", "images/banner-digital-web.png"]; // Replace with your image paths
+	let currentIndex = 0;
+
+	function showNextImage() {
+		// Calculate the new index
+		let newIndex = (currentIndex + 1) % images.length;
+
+		// The current ticker image element
+		const currentTickerImg = document.querySelector('.ticker');
+
+		// Create a new image element for the new image
+		const newTickerImg = document.createElement('img');
+		newTickerImg.src = images[newIndex];
+		newTickerImg.className = "ticker slide-in-right"; // Positioned off-screen to the right
+
+		// Append the new image to the image slider
+		const imageSlider = currentTickerImg.parentNode;
+		imageSlider.appendChild(newTickerImg);
+
+		// Before starting the animation, raise the z-index of the new image
+		newTickerImg.style.zIndex = 2; // Above the old image
+
+		// As the new image slides in, change the z-index of the old image to be below
+		setTimeout(() => {
+			currentTickerImg.style.zIndex = 1;
+			newTickerImg.classList.remove('slide-in-right'); // This will start the sliding in animation
+		}, 0); // Immediately execute this, no need for delay
+
+		// Slide out the current image
+		currentTickerImg.classList.add('slide-out-left');
+
+		// After the slide-out transition completes, remove the old image
+		setTimeout(() => {
+			currentTickerImg.remove();
+			// Reset z-index of the new image if required (optional)
+			// newTickerImg.style.zIndex = 1;
+		}, 500); // Matches the transition duration
+
+		// Update the currentIndex to the new image
+		currentIndex = newIndex;
+	}
+
+	function showPreviousImage() {
+		// Calculate the new index
+		let newIndex = (currentIndex + 1) % images.length;
+
+		// The current ticker image element
+		const currentTickerImg = document.querySelector('.ticker');
+
+		// Create a new image element for the new image
+		const newTickerImg = document.createElement('img');
+		newTickerImg.src = images[newIndex];
+		newTickerImg.className = "ticker slide-in-left"; // Positioned off-screen to the right
+
+		// Append the new image to the image slider
+		const imageSlider = currentTickerImg.parentNode;
+		imageSlider.appendChild(newTickerImg);
+
+		// Before starting the animation, raise the z-index of the new image
+		newTickerImg.style.zIndex = 2; // Above the old image
+
+		// As the new image slides in, change the z-index of the old image to be below
+		setTimeout(() => {
+			currentTickerImg.style.zIndex = 1;
+			newTickerImg.classList.remove('slide-in-left'); // This will start the sliding in animation
+		}, 0); // Immediately execute this, no need for delay
+
+		// Slide out the current image
+		currentTickerImg.classList.add('slide-out-right');
+
+		// After the slide-out transition completes, remove the old image
+		setTimeout(() => {
+			currentTickerImg.remove();
+			// Reset z-index of the new image if required (optional)
+			// newTickerImg.style.zIndex = 1;
+		}, 500); // Matches the transition duration
+
+		// Update the currentIndex to the new image
+		currentIndex = newIndex;
+	}
+
+	document.querySelector('.right-arrow').addEventListener('click', showNextImage);
+	document.querySelector('.left-arrow').addEventListener('click', showPreviousImage);
+		
 })(jQuery);
