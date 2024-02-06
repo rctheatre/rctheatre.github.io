@@ -229,6 +229,9 @@ input, select, textarea {
 /* Container */
 
 	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
@@ -2784,6 +2787,39 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
+/* Previous Shows */
+
+.container-shows {
+	border: 1px solid #000; /* Thin line for the container */
+	border-radius: 10px; /* Rounded corners */
+	padding: 1em;
+	margin: 1em;
+	display: flex;
+	flex-direction: column; /* Stack image and text vertically */
+	align-items: center;
+	width: 300px;
+	position: relative;
+	padding-bottom: 70px;
+  }
+
+  .container-shows img {
+	display: block;
+	max-width: 100%; /* Make image responsive */
+	height: auto;
+	border-radius: 5px; /* Optional: rounded corners for the image */
+	width: 100%;
+  }
+
+  .container-shows p {
+	position: absolute; /* Position the paragraph absolutely within the container */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Stretch the paragraph to the container's width */
+    color: rgb(0, 0, 0); /* Optional: Change text color for better visibility */
+    text-align: center; /* Optional: Center the text */
+    padding: 10px 0; /* Optional: Add some padding */
+  }
+
 /* Main */
 
 	#main {
@@ -3361,6 +3397,14 @@ input, select, textarea {
 				top: 3em;
 				margin-bottom: 6em;
 			}
+
+		/* Previous Shows */
+		.container-shows {
+			justify-content: space-between;
+			max-width: 500px; /* Or any max-width that fits your design */
+			flex: 1 1 calc((80vw - 100px) / 3); /* Adjust the calc() as needed */
+    		max-width: 300px;
+		  }
 
 		/* Section/Article */
 
