@@ -1,1 +1,13 @@
-.DS_Store 
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+*.class
+*.jar
+*.war
+*.ear
+*.exe
+*.dll
+*.so
+*.out
