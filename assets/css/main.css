@@ -229,9 +229,9 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		display: flex;
+		/* display: flex;
 		flex-wrap: wrap;
-		justify-content: flex-start;
+		justify-content: flex-start; */
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
@@ -2023,7 +2023,7 @@ input, select, textarea {
 		position: relative; /* Required for absolute positioning to work */
 		width: 100vw; /* Set the width of the image slider */
 		overflow: hidden; /* Hide any part of the images that overflow */
-		/* min-height: 600px; */
+		min-height: 600px;
 	}
 
 	/* Transition effect */
@@ -2846,13 +2846,19 @@ input, select, textarea {
 	margin: 0 auto;
 }
 
+.container-2 iframe {
+	max-width: 560px;
+	border: 0; 
+	border-radius: 5px; 
+}
+
 .container-3 {
 	display: flex;
-    justify-content: center; 
-    align-items: center;
-    flex-direction: row; 
-	width: 80%;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	margin: 0 auto;
+	max-width: 100%;
+	width: 1400px;
 }
 
 .box {
