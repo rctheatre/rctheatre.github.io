@@ -2023,7 +2023,7 @@ input, select, textarea {
 		position: relative; /* Required for absolute positioning to work */
 		width: 100vw; /* Set the width of the image slider */
 		overflow: hidden; /* Hide any part of the images that overflow */
-		min-height: 600px;
+		/* min-height: 600px; */
 	}
 
 	/* Transition effect */
