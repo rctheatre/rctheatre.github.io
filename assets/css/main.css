@@ -3410,7 +3410,7 @@ input, select, textarea {
 		.container-shows {
 			justify-content: space-between;
 			max-width: 500px; /* Or any max-width that fits your design */
-			flex: 1 1 calc((80vw - 100px) / 3); /* Adjust the calc() as needed */
+			/* flex: 1 1 calc((80vw - 100px) / 3);  */
     		max-width: 300px;
 		  }
 
