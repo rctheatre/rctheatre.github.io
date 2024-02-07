@@ -227,7 +227,7 @@
 		});
 
 	// Ticker.
-	let images = ["images/header.svg", "images/banner-digital-web.png"]; // Replace with your image paths
+	let images = ["images/header.png", "images/banner-digital-web.png"]; // Replace with your image paths
 	let currentIndex = 0;
 
 	function showNextImage() {
