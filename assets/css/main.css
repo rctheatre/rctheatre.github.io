@@ -281,12 +281,12 @@ input, select, textarea {
 	display: flex;
 	justify-content: space-between; /* To separate the columns evenly */
 	}
-		
+
 		.contact-info .col-6 {
 		flex: 1; /* Each column will take up half the space of the row */
 		padding: 1em; /* Optional padding around the column content for better readability */
 		}
-		
+
 		.contact-info .col-6:not(:last-child) {
 		border-right: 1px solid #ccc; /* Add a border to the right side of the first column */
 		}
@@ -303,31 +303,31 @@ input, select, textarea {
 	.row2 {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center; 
+		align-items: center;
 	}
-	
+
 	.row2 > .col-4 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin: 0;
 		padding: 0;
-		height: 100%; 
+		height: 100%;
 	}
-	
+
 	.row2 .image.featured {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 75%; 
-		height: 50%; 
+		width: 75%;
+		height: 50%;
 		padding-top: 2em;
 	}
-	
+
 	.row2 .image.featured img {
 		max-width: 100%;
-		max-height: 100%; 
-		margin: auto; 
+		max-height: 100%;
+		margin: auto;
 	}
 
 
@@ -362,7 +362,7 @@ input, select, textarea {
 	.row2.aln-bottom {
 		align-items: flex-end;
 	}
-	
+
 	.row2 > .imp {
 		order: -1;
 	}
@@ -504,7 +504,7 @@ input, select, textarea {
 		.row.aln-bottom {
 			align-items: flex-end;
 		}
-		
+
 		.row > .imp {
 			order: -1;
 		}
@@ -1195,7 +1195,7 @@ input, select, textarea {
 							padding-top: 72px;
 						}
 
-		} 
+		}
 
 		@media screen and (max-width: 960px) {
 
@@ -1950,8 +1950,8 @@ input, select, textarea {
 		margin-bottom: 0;
 		background: rgba(0,0,0,0.05);
 		display: flex;
-		justify-content: center; 
-		align-items: center; 
+		justify-content: center;
+		align-items: center;
 	}
 
 
@@ -1959,8 +1959,8 @@ input, select, textarea {
 		margin-bottom: 0;
 		background: rgba(0,0,0,0.05);
 		display: flex;
-		justify-content: center; 
-		align-items: center; 
+		justify-content: center;
+		align-items: center;
 	}
 
 	header {
@@ -1995,23 +1995,23 @@ input, select, textarea {
 		z-index: 1000;
 		cursor: pointer;
 	}
-	
+
 	.left-arrow,
 	.right-arrow {
 		width: 3em;
 		height: 3em;
 	}
-	
+
 	.left-arrow {
 		left: 0;
 		transform: translateY(-50%) rotate(180deg);
 	}
-	
+
 	.right-arrow {
 		right: 0;
 		transform: translateY(-50%);
 	}
-	
+
 	.ticker-arrow {
 		width: 100%;
 		height: 100%;
@@ -2034,7 +2034,7 @@ input, select, textarea {
 		object-fit: cover;
 		margin-top: 70px;
 	}
-	
+
 	/* Additional classes for the slide animations */
 		.slide-out-left {
 			position: absolute;
@@ -2678,9 +2678,9 @@ input, select, textarea {
 			}
 
 		.navbar-logo {
-			height: 100px; 
-			vertical-align: middle; 
-			margin-left: 15px; 
+			height: 100px;
+			vertical-align: middle;
+			margin-left: 15px;
 			margin-top: 10px;
 			float: left;
 		}
@@ -2838,43 +2838,54 @@ input, select, textarea {
 }
 
 .container-2 {
-    display: block; 
-    justify-content: center; 
+    display: block;
+    justify-content: center;
     align-items: center;
-    flex-direction: row; 
+    flex-direction: row;
 	width: 80%;
 	margin: 0 auto;
 }
 
 .container-2 iframe {
 	max-width: 560px;
-	border: 0; 
-	border-radius: 5px; 
+	border: 0;
+	border-radius: 5px;
 }
 
 .container-3 {
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: flex-start; */
 	justify-content: center;
 	margin: 0 auto;
 	max-width: 100%;
 	width: 1400px;
 }
+.container-4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.container-4 iframe{
+	border: 0;
+	border-radius: 5px;
+}
 
 .box {
-    width: 300px; 
-	height: 250px; 
-    padding: 20px; 
-    border: 1px solid rgb(226, 226, 226); 
-    text-align: left; 
+    width: 300px;
+	height: 250px;
+    padding: 20px;
+    border: 1px solid rgb(226, 226, 226);
+    text-align: left;
 	border-radius: 10px;
 	margin: 0 10px;
 }
 	.box p {
 		position: relative;
-		text-align: left; 
-		padding-top: 10px; 
+		text-align: left;
+		padding-top: 10px;
 	}
 
 	.box button {
@@ -3134,7 +3145,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: rgba(0, 0, 0, 0.5); 
+			background: rgba(0, 0, 0, 0.5);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -3149,7 +3160,7 @@ input, select, textarea {
 		}
 
 		.forward:hover + .overlay {
-			opacity: 0; 
+			opacity: 0;
 		}
 
 		.ticker h1 {
@@ -3287,7 +3298,7 @@ input, select, textarea {
 
 	} */
 
-	
+
 /* Normal */
 
 	@media screen and (max-width: 1280px) {
