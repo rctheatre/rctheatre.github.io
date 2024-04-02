@@ -227,7 +227,7 @@
 		});
 
 	// Ticker.
-	let images = ["images/header.png", "images/banner-digital-web.png"]; // Replace with your image paths
+	let images = ["images/header.png", "images/banner-digital-web.png", "images/macbeth-banner.png"];
 	let currentIndex = 0;
 
 	function showNextImage() {
@@ -310,5 +310,5 @@
 
 	document.querySelector('.right-arrow').addEventListener('click', showNextImage);
 	document.querySelector('.left-arrow').addEventListener('click', showPreviousImage);
-		
+
 })(jQuery);
