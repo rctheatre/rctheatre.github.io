@@ -1934,6 +1934,28 @@ input, select, textarea {
 
 /* Sections/Article */
 
+		/* styles.css */
+	#iframe-container {
+		position: relative;
+		width: 600px; /* Match iframe width */
+		height: 400px; /* Match iframe height */
+	}
+
+	#loading-message {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 20px;
+		color: #333;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+
 	section, article {
 		margin-bottom: 3em;
 	}

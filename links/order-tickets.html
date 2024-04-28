@@ -67,8 +67,13 @@
 						</header>
 					</div>
 
-					<div class="container-3">
-						<iframe id="widget_iframe" width="100%" frameborder="0" src="https://embed.eventbookings.com/events?embed_id=cad889bc-3960-4a59-87cc-47eecabd4425"></iframe>
+					<div class="iframe-container">
+						<iframe id="widget_iframe" width="100%" frameborder="0"
+							onload="setTimeout(function() {
+									  document.getElementById('loading-message').style.display = 'none';
+								   }, 3000)"
+							src="https://embed.eventbookings.com/events?embed_id=cad889bc-3960-4a59-87cc-47eecabd4425"></iframe>
+						<div id="loading-message"><strong>Loading...</strong></div>
 						<script id="client_embed_widget_script" src="https://embed.eventbookings.com/embed/js/client-embed-widget.js"></script>
 					</div>
 
