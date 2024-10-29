@@ -227,7 +227,7 @@
 		});
 
 	// Ticker.
-	let images = ["images/header.png", "images/CC 2024 Website Banner.jpg", "images/banner-digital-web.png", "images/macbeth-banner.png"];
+	let images = ["images/header.png", "images/christmas-carol/Scrooge-banner.png", "images/banner-digital-web.png", "images/macbeth-banner.png"];
 	let currentIndex = 0;
 
 	function showNextImage() {
