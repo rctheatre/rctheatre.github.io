@@ -227,7 +227,7 @@
 		});
 
 	// Ticker.
-	let images = ["images/header.png"];
+	let images = ["images/header.png", "images/Mary Poppins - Digital - Banner.png"];
 	let currentIndex = 0;
 
 	function showNextImage() {
